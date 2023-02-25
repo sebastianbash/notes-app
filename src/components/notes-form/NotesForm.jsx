@@ -34,7 +34,7 @@ export const NotesForm = ({ closeForm, isFromEdit, editNoteData }) => {
     if (isFromEdit) {
       setNotesData(editNoteData);
     }
-  }, []);
+  }, [editNoteData, isFromEdit]);
   const submitForm = () => {
     const error = handleNotesValidation(
       notesData.title,
