@@ -1,0 +1,61 @@
+.nav--container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+  color: var(--black);
+  z-index: 25;
+  box-shadow: 0px 1px 6px -2px rgb(0 0 0 / 40%);
+}
+
+.logo a {
+  color: var(--black);
+  text-decoration: none;
+  font-family: "Pacifico", cursive;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: var(--primary--color);
+}
+
+.nav--container .icon {
+  cursor: pointer;
+}
+
+.container--100 {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.nav--container .hamburger {
+  display: none;
+}
+
+.nav--container .cta--container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.nav--container .cta--container a {
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav--container .hamburger {
+    display: inline-block;
+  }
+
+  .nav--container {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nav--container .btn--primary {
+    padding: 0.5rem;
+  }
+}
