@@ -23,7 +23,7 @@ export const NotesHome = () => {
           <Filters />
           {hasPinnedNotes > 0 ? <PinnedNotes notes={notes} /> : ""}
           {hasUnPinnedNotes > 0 ? <UnPinnedNotes notes={notes} /> : ""}
-          {hasUnPinnedNotes === 0 && hasPinnedNotes === 0 && "No Notes Found"}
+          {hasUnPinnedNotes === 0 && hasPinnedNotes === 0 && "¡Crea tu primera nota!"}
         </div>
         {loading && <Loader />}
       </div>

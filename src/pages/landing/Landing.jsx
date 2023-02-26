@@ -12,11 +12,9 @@ export const Landing = () => {
             <span>Notes</span> App
           </h1>
           <div className="content--description">
-            <p className="tagline"> Get organized. Remember everything </p>
+            <p className="tagline"> Organizate. Recuerda Todo </p>
             <p>
-              Notes App is a digital Notes manager. Manage your notes and
-              workflow in a modern way and boost your efficiency without any
-              efforts.
+              Notes App es un administrador de notas digital. Administre sus notas y flujo de trabajo de una menra moderna y aumente su eficiencia sin ningún esfuerzo.
             </p>
           </div>
           <div className="cta--container">
@@ -26,10 +24,10 @@ export const Landing = () => {
                 navigate("/signup");
               }}
             >
-              Start Note taking journey
+              Inicie su toma de notas
             </button>
             <Link className="link link--primary m-r-1" to="/login">
-              Already have an account?
+              ¿Ya tienes una cuenta?
             </Link>
           </div>
         </div>

@@ -66,11 +66,11 @@ export const SignUp = () => {
     <>
       <main>
         <div className="login--container">
-          <h1 className="heading--3 text--center">Sign Up</h1>
+          <h1 className="heading--3 text--center">Regístrate</h1>
           <div className="signup--name--container">
             <InputTextBox
               error={userData.firstNameError}
-              labelName="First Name"
+              labelName="Nombre"
               id="firstName"
               changeHandler={(e) => {
                 setUserData((prevData) => ({
@@ -85,7 +85,7 @@ export const SignUp = () => {
             />
             <InputTextBox
               error={userData.lastNameError}
-              labelName="Last Name"
+              labelName="Apellido"
               id="lastName"
               changeHandler={(e) => {
                 setUserData((prevData) => ({
@@ -101,7 +101,7 @@ export const SignUp = () => {
           </div>
           <InputTextBox
             error={userData.mailError}
-            labelName="Email"
+            labelName="Correo Electrónico"
             id="email"
             changeHandler={(e) => {
               setUserData((prevData) => ({
@@ -117,7 +117,7 @@ export const SignUp = () => {
 
           <InputPassword
             error={userData.passwordError}
-            labelName="Password"
+            labelName="Contraseña"
             id="password"
             value={userData.password}
             changeHandler={(e) => {
@@ -130,7 +130,7 @@ export const SignUp = () => {
           />
           <InputPassword
             error={userData.confirmPasswordError}
-            labelName="Confirm password"
+            labelName="Confirmar Contraseña"
             id="confirmPassword"
             value={userData.confirmPassword}
             changeHandler={(e) => {
@@ -149,13 +149,13 @@ export const SignUp = () => {
                 signUpHandler();
               }}
             >
-              Sign Up
+              Regístrate
             </button>
           </div>
           <p className="signup--text m-t-1 m-h-1">
-            Already Have a account?
+            ¿Ya tienes una cuenta?{" "}
             <Link to="/login" className="link link--information">
-              Login
+              Iniciar Sesión
             </Link>
           </p>
         </div>

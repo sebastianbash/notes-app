@@ -44,7 +44,7 @@ export const Navbar = () => {
         </div>
         <div className="cta--container">
           <button className="btn btn--primary " onClick={() => setForm(true)}>
-            Create Note
+            Crear Nota
           </button>
           <Link to="/profile">
             <Person className="icon" />

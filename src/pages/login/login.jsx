@@ -37,10 +37,10 @@ const Login = () => {
     <>
       <main>
         <div className="login--container">
-          <h1 className="heading--3 text--center">Login</h1>
+          <h1 className="heading--3 text--center">Inicio de Sesión</h1>
           <InputTextBox
             error={userData.mailError}
-            labelName={"Email"}
+            labelName={"Correo Electrónico"}
             id={"email"}
             placeHolder="test@test.com"
             changeHandler={(e) => {
@@ -55,7 +55,7 @@ const Login = () => {
           />
           <InputPassword
             error={userData.passwordError}
-            labelName="Password"
+            labelName="Contraseña"
             id="password"
             value={userData.password}
             changeHandler={(e) =>
@@ -74,29 +74,13 @@ const Login = () => {
                 loginHandler();
               }}
             >
-              Login
-            </button>
-          </div>
-          <div className="m-t-1 m-h-1">
-            <button
-              className="btn btn--primary w-100"
-              onClick={() => {
-                setUserData((prevData) => ({
-                  ...prevData,
-                  password: "test1234",
-                  userMail: "testuser@gmail.com",
-                  mailError: "",
-                  passwordError: "",
-                }));
-              }}
-            >
-              Fill the test credentials
+              Iniciar Sesión
             </button>
           </div>
           <p className="signup--text m-t-1 m-h-1">
-            Don't have a account?
+            ¿No tienes una cuenta?{" "}
             <Link to="/signUp" className="link link--information">
-              Sign up
+              Regístrate Aquí
             </Link>
           </p>
         </div>

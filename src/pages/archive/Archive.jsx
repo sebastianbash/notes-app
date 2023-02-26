@@ -8,13 +8,13 @@ export const Archive = () => {
     <>
       <Navbar />
       <div className="main--container">
-        <h2 className="text--center">Archived Notes</h2>
+        <h2 className="text--center">Notas Archivadas</h2>
         <div className="notes--container">
           {otherNotes.archivedNotes.length
             ? otherNotes.archivedNotes.map((note) => (
                 <OtherNote key={note.id} note={note} isArchived={true} />
               ))
-            : "No archive notes found"}
+            : "Archivador vacío"}
         </div>
         {loading && <Loader />}
       </div>

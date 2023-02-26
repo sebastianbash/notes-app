@@ -3,10 +3,10 @@ import { useFilter } from "../../context";
 import "./filter.css";
 
 const priorityData = [
-  { id: "priorityAll", value: "all", labelName: "All" },
-  { id: "priorityHigh", value: "high", labelName: "High" },
-  { id: "PriorityMedium", value: "medium", labelName: "Medium" },
-  { id: "priorityLow", value: "low", labelName: "Low" },
+  { id: "priorityAll", value: "all", labelName: "Todos" },
+  { id: "priorityHigh", value: "high", labelName: "Alta" },
+  { id: "PriorityMedium", value: "medium", labelName: "Media" },
+  { id: "priorityLow", value: "low", labelName: "Baja" },
 ];
 
 const changeHandler = (e, filterDispatch) => {
@@ -23,7 +23,7 @@ export const Filters = () => {
     <div className="filter--container">
       <div>
         <label htmlFor="sortByTime" className="m-r-1">
-          Sort By
+          Ordenar por
         </label>
         <select
           id="sortByTime"
@@ -35,12 +35,12 @@ export const Filters = () => {
             })
           }
         >
-          <option value="newest">Newest On Top</option>
-          <option value="oldest">Oldest On Top</option>
+          <option value="newest">Desendente</option>
+          <option value="oldest">Ascendente</option>
         </select>
       </div>
       <div className="priority--container">
-        <p>Priority</p>
+        <p>Prioridad</p>
         {priorityData.map((priority) => (
           <span key={priority.id}>
             <input

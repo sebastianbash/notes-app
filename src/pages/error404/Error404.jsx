@@ -7,7 +7,7 @@ export const Error404 = () => {
     <>
       <Navbar />
       <div className="main--container">
-        <h3 className="heading--3 text--center m-b-1">Page Not Found</h3>
+        <h3 className="heading--3 text--center m-b-1">Página no encontrada</h3>
         <div className="image--404--container">
           <img className="img--res" src={errorImg} alt="" />
         </div>

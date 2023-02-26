@@ -3,7 +3,7 @@ import { Notes } from "../notes/Notes";
 export const PinnedNotes = ({ notes }) => {
   return (
     <>
-      <h2 className="text--center">Pinned Notes</h2>
+      <h2 className="text--center">Notas fijadas</h2>
       {notes
         .filter((note) => note.isPinned)
         .map((note) => (

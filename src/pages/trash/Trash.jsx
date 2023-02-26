@@ -8,13 +8,13 @@ export const Trash = () => {
     <>
       <Navbar />
       <div className="main--container">
-        <h2 className="text--center">Trashed Notes</h2>
+        <h2 className="text--center">Notas en Papelera</h2>
         <div className="notes--container">
           {otherNotes.trashedNotes.length
             ? otherNotes.trashedNotes.map((note) => (
                 <OtherNote key={note.id} note={note} isTrashed={true} />
               ))
-            : "No trashed notes found"}
+            : "Papelera vacía"}
         </div>
         {loading && <Loader />}
       </div>

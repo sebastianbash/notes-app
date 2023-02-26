@@ -35,7 +35,7 @@ export const LabelContainer = ({ closeForm }) => {
     } else {
       setLabelData((prev) => ({
         ...prev,
-        error: "Label already present",
+        error: "La etiqueta ya existe",
       }));
     }
   };
@@ -51,14 +51,14 @@ export const LabelContainer = ({ closeForm }) => {
               className="btn text--center w-100 btn--primary"
               onClick={() => setAddForm(true)}
             >
-              Add Label
+              Añadir Etiquetas
             </button>
           )}
           {showAddForm && (
             <>
               <input
                 type="text"
-                placeholder="Add Label Here"
+                placeholder="Añade la etiqueta aquí"
                 onChange={(e) => changeHandler(e)}
                 value={labelData.enteredValue}
               />
@@ -77,13 +77,13 @@ export const LabelContainer = ({ closeForm }) => {
         <p className="error-text">{labelData.error}</p>
         {labels.length ? (
           <div className="m-t-1">
-            <p className="heading--5 text--center m-t-2">Added Labels</p>
+            <p className="heading--5 text--center m-t-2">Etiquetas agregadas</p>
             {labels.map((label) => (
               <LabelItem labelData={label} key={label} />
             ))}
           </div>
         ) : (
-          "No labels Found"
+          "No hay etiquetas"
         )}
       </div>
       <div className="overlay overlay-notes" onClick={closeForm}></div>

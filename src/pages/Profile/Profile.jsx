@@ -10,7 +10,7 @@ export const Profile = () => {
       <Navbar />
       <main>
         <div className="user--container">
-          <h1 className="heading--3 text--center">My Account</h1>
+          <h1 className="heading--3 text--center">Mi cuenta</h1>
           <div className="avatar--container">
             <img
               src="https://randomuser.me/api/portraits/men/41.jpg"
@@ -32,7 +32,7 @@ export const Profile = () => {
                     signOut();
                   }}
                 >
-                  Logout
+                  Cerra Sesión
                 </button>
               </div>
             </div>

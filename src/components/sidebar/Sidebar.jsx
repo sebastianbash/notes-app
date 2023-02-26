@@ -27,7 +27,7 @@ export const Sidebar = () => {
         <NavLink style={activeLink} to={routes.HOME_PAGE}>
           <div className="sidebar--item">
             <NoteAltOutlined className="icon icon--md" />
-            <p className="sidebar--title">Notes</p>
+            <p className="sidebar--title">Notas</p>
           </div>
         </NavLink>
         {labels.length ? (
@@ -50,18 +50,18 @@ export const Sidebar = () => {
         )}
         <div className="sidebar--item" onClick={() => setLabelForm(true)}>
           <EditOutlined className="icon icon--md" />
-          <p className="sidebar--title">Add Labels</p>
+          <p className="sidebar--title">Añade Etiquetas</p>
         </div>
         <NavLink style={activeLink} to={routes.ARCHIVE_PAGE}>
           <div className="sidebar--item">
             <ArchiveOutlined className="icon icon--md" />
-            <p className="sidebar--title">Archive</p>
+            <p className="sidebar--title">Archivado</p>
           </div>
         </NavLink>
         <NavLink style={activeLink} to={routes.TRASH_PAGE}>
           <div className="sidebar--item">
             <DeleteOutline className="icon icon--md" />
-            <p className="sidebar--title">Trash</p>
+            <p className="sidebar--title">Papelera</p>
           </div>
         </NavLink>
       </aside>
